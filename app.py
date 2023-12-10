@@ -271,6 +271,8 @@ def update():
         return render_template ("cart.html",subTotal=subTotal, shoppingCart=shoppingCart, shopLen=shopLen, total=total, totItems=totItems, display=display, session=session )
 
 
-if __name__ == '__main__':
-    locale.setlocale(locale.LC_ALL, 'fr_FR.UTF-8')
-    app.run(debug=True)
+#if __name__ == '__main__':
+   # locale.setlocale(locale.LC_ALL, 'fr_FR.UTF-8')
+   # app.run(debug=True)
+if __name__ == "__main__":
+ app.run(host='0.0.0.0', port='8080') # indent this line
